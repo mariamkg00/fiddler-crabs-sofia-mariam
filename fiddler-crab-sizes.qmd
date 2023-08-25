@@ -1,6 +1,8 @@
 ---
 title: "Fiddler Crab Summary Data"
 format: html
+execute: 
+  echo: true
 editor: visual
 ---
 
@@ -12,9 +14,14 @@ library(tidyverse)
 ```
 
 ```{r}
+#| fig-cap: "Graph showing a scatterplot of size of fiddler crabs and latitude."
 crab_plot <- 
   ggplot(data = pie_crab, aes(x = size, y = latitude, color = size)) +
   geom_point()
 
 crab_plot
+```
+
+```{r}
+
 ```
