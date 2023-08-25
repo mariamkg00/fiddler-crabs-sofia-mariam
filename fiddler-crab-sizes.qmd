@@ -8,5 +8,13 @@ editor: visual
 
 ```{r}
 library(lterdatasampler)
+library(tidyverse)
+```
 
+```{r}
+crab_plot <- 
+  ggplot(data = pie_crab, aes(x = size, y = latitude, color = size)) +
+  geom_point()
+
+crab_plot
 ```
